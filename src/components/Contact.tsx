@@ -11,7 +11,7 @@ export const Contact = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    message: '',
+    message: ''
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -41,11 +41,11 @@ export const Contact = () => {
                     type="text"
                     value={formData.fullName}
                     onChange={(e) =>
-                      setFormData({ ...formData, fullName: e.target.value })
+                    setFormData({ ...formData, fullName: e.target.value })
                     }
                     required
-                    className="bg-background/50"
-                  />
+                    className="bg-background/50" />
+                  
                 </div>
 
                 <div>
@@ -56,11 +56,11 @@ export const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
+                    setFormData({ ...formData, email: e.target.value })
                     }
                     required
-                    className="bg-background/50"
-                  />
+                    className="bg-background/50" />
+                  
                 </div>
 
                 <div>
@@ -70,18 +70,18 @@ export const Contact = () => {
                   <Textarea
                     value={formData.message}
                     onChange={(e) =>
-                      setFormData({ ...formData, message: e.target.value })
+                    setFormData({ ...formData, message: e.target.value })
                     }
                     required
                     rows={5}
-                    className="bg-background/50 resize-none"
-                  />
+                    className="bg-background/50 resize-none" />
+                  
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full gradient-primary shadow-soft hover:shadow-glow transition-smooth group"
-                >
+                  className="w-full gradient-primary shadow-soft hover:shadow-glow transition-smooth group">
+                  
                   <Send className="mr-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
                   {t('sendMessage')}
                 </Button>
@@ -98,9 +98,9 @@ export const Contact = () => {
                     <p className="font-semibold">{t('email')}</p>
                     <a
                       href="mailto:husniya@gmail.com"
-                      className="text-muted-foreground hover:text-primary transition-smooth"
-                    >
-                      husniya@gmail.com
+                      className="text-muted-foreground hover:text-primary transition-smooth">
+                      
+                      rozimboyevahusniya@gmail.com
                     </a>
                   </div>
                 </div>
@@ -115,8 +115,8 @@ export const Contact = () => {
                       href="https://github.com/husniya09"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-smooth"
-                    >
+                      className="text-muted-foreground hover:text-primary transition-smooth">
+                      
                       github.com/husniya09
                     </a>
                   </div>
@@ -126,6 +126,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };

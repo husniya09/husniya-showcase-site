@@ -19,10 +19,10 @@ export const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="block text-foreground">Husniya</span>
-              <span className="gradient-primary bg-clip-text text-transparent">
-                {t('backendDeveloper')}
-              </span>
+              <span className="block text-foreground">​</span>
+              
+
+              
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
               {t('heroDescription')}
@@ -31,8 +31,8 @@ export const Hero = () => {
               <Button
                 size="lg"
                 onClick={() => scrollToSection('projects')}
-                className="gradient-primary shadow-soft hover:shadow-glow transition-smooth group"
-              >
+                className="gradient-primary shadow-soft hover:shadow-glow transition-smooth group">
+                
                 {t('viewPortfolio')}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
               </Button>
@@ -40,8 +40,8 @@ export const Hero = () => {
                 size="lg"
                 variant="outline"
                 onClick={() => scrollToSection('contact')}
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
-              >
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth">
+                
                 <Mail className="mr-2 h-5 w-5" />
                 {t('contactMe')}
               </Button>
@@ -54,12 +54,12 @@ export const Hero = () => {
               <img
                 src={heroImage}
                 alt="Husniya"
-                className="relative rounded-2xl shadow-soft w-full max-w-lg mx-auto animate-float"
-              />
+                className="relative rounded-2xl shadow-soft w-full max-w-lg mx-auto animate-float" />
+              
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };

@@ -18,38 +18,38 @@ export const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
-          Husniya
+          ​
         </div>
 
         <div className="hidden md:flex items-center gap-8">
           <button
             onClick={() => scrollToSection('home')}
-            className="text-foreground hover:text-primary transition-smooth font-medium"
-          >
+            className="text-foreground hover:text-primary transition-smooth font-medium">
+            
             {t('home')}
           </button>
           <button
             onClick={() => scrollToSection('skills')}
-            className="text-foreground hover:text-primary transition-smooth font-medium"
-          >
+            className="text-foreground hover:text-primary transition-smooth font-medium">
+            
             {t('skills')}
           </button>
           <button
             onClick={() => scrollToSection('about')}
-            className="text-foreground hover:text-primary transition-smooth font-medium"
-          >
+            className="text-foreground hover:text-primary transition-smooth font-medium">
+            
             {t('about')}
           </button>
           <button
             onClick={() => scrollToSection('projects')}
-            className="text-foreground hover:text-primary transition-smooth font-medium"
-          >
+            className="text-foreground hover:text-primary transition-smooth font-medium">
+            
             {t('projects')}
           </button>
           <button
             onClick={() => scrollToSection('contact')}
-            className="text-foreground hover:text-primary transition-smooth font-medium"
-          >
+            className="text-foreground hover:text-primary transition-smooth font-medium">
+            
             {t('contact')}
           </button>
         </div>
@@ -59,24 +59,24 @@ export const Header = () => {
             variant="ghost"
             size="icon"
             onClick={() => setLanguage(language === 'uz' ? 'en' : 'uz')}
-            className="transition-smooth"
-          >
+            className="transition-smooth">
+            
             <Globe className="h-5 w-5" />
           </Button>
           <Button
             variant="ghost"
             size="icon"
             onClick={toggleTheme}
-            className="transition-smooth"
-          >
-            {theme === 'light' ? (
-              <Moon className="h-5 w-5" />
-            ) : (
-              <Sun className="h-5 w-5" />
-            )}
+            className="transition-smooth">
+            
+            {theme === 'light' ?
+            <Moon className="h-5 w-5" /> :
+
+            <Sun className="h-5 w-5" />
+            }
           </Button>
         </div>
       </nav>
-    </header>
-  );
+    </header>);
+
 };
